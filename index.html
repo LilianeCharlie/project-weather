@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="app">
-        <div id="header">
-            <h1>Weather App</h1>
-        </div>
-        <div id="input-container">
-            <input type="text" id="city-input" placeholder="Enter city name">
-            <button id="submit-button">Get Weather</button>
-        </div>
-        <div id="weather-info">
-            <h2 id="city"></h2>
-            <p id="temperature"></p>
-            <p id="description"></p>
-        </div>
-        <div id="forecast">
-            <h2>5-Day Forecast</h2>
-            <ul id="forecast-list"></ul>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container" id="app">
+      <div class="header-container" id="header">
+        <h1 class="weather-app">Weather App</h1>
+      </div>
+      <div class="placeholder-container" id="input-container">
+        <input
+          type="text"
+          class="custom-input"
+          id="city-input"
+          placeholder="Enter city name"
+        />
+        <button class="city-button" id="submit-button">Get Weather</button>
+      </div>
+      <div class="weather-container" id="weather-info">
+        <h2 class="city-info" id="city"></h2>
+        <p class="temperature-list" id="temperature"></p>
+        <p class="overview" id="description"></p>
+      </div>
+      <div class="forecast-container" id="forecast">
+        <h2 class="five-days">5-Day Forecast</h2>
+        <ul class="forecast-order" id="forecast-list"></ul>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
